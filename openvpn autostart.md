@@ -19,10 +19,15 @@ SYSTEMD
 1. Скачиваем файл конфигурации example.ovpn
 2. `sudo mv ~/example.ovpn /etc/openvpn/example.conf `
 3. `sudo vim /etc/openvpn/example.txt
+
             # добавляем логин и пароль
+            
             YOUR_VPN_USERNAME
+            
             YOUR_VPN_PASSWORD
+            
             # сохраняем`
+            
 4. `sudo vim /etc/openvpn/example.conf`
             `auth-user-pass /etc/openvpn/example.txt`
 5. Проверяем `sudo openvpn --config /etc/openvpn/example.conf`
